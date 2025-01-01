@@ -10,9 +10,12 @@ class homeController extends Controller
         $nom = $request->nom;
         //$languages = [];
         $languages = ['php', 'javascript', 'java', 'c'];
-        return view("salam", [
-            "nom" => $nom,
-            "languages" => $languages
-        ]); 
+        $color = 'red';
+
+        // return view("salam", [
+        //     "nom" => $nom,
+        //     "languages" => $languages
+        // ]); 
+        return view("salam", compact('nom','languages', 'color')); 
     }
 }
