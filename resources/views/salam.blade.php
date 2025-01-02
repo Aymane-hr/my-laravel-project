@@ -1,4 +1,6 @@
-@include('partials.navbar')
+@extends('layouts.master')
+
+@section('main')
 <h3>Salam Alikum {{ $nom }}</h3>
 @if(count($languages)>0) {{-- // unless =! if  tnkhdemoha f k wa7d  @unless(count($languages)<0) --}}
 <h4>Cours : </h4>
@@ -32,3 +34,4 @@
     @default
         
 @endswitch
+@endsection
