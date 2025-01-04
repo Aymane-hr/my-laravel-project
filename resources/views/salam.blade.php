@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('title')
+    Home
+@endsection
 
 @section('main')
 <h3>Salam Alikum {{ $nom }}</h3>

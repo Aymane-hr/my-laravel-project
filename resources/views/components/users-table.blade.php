@@ -1,8 +1,5 @@
-@extends('layouts.master')
-@section('title') Profile @endsection
-@section('main')
-    <h3>Profile</h3>
-    <p>method classique</p>
+@props(['users'])
+<div>
     <table class="table">
         <tr>
             <th>Id</th>
@@ -18,6 +15,4 @@
             
         @endforeach
     </table>
-    <p>another method component </p>
-<x-users-table :users='$users' />
-@endsection
+</div>

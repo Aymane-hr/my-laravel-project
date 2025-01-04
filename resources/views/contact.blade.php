@@ -1,1 +1,4 @@
-@include('layouts.master')
+@extends('layouts.master')
+@section('title')
+    Contact
+@endsection
